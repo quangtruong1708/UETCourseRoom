@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="nav_background">#ca8383</color>
+    <color name="color_nav_border">#050505</color>
+    <color name="color_course_room_name">#ffffff</color>
 </resources>
