@@ -7,24 +7,33 @@
     android:layout_height="match_parent"
     tools:context=".LectureActivity">
 
-    <TextView
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/lecPdfView"
+        android:layout_below="@+id/lectureLayoutControl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvLectureTitle"
-        android:textSize="20sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_above="@+id/scrollViewBody"/>
+        android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_below="@+id/tvLectureTitle"
-        android:id="@+id/scrollViewBody"
-        android:layout_width="wrap_content"
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <RelativeLayout
+        android:id="@+id/lectureLayoutControl"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tvChapterBody"/>
-    </ScrollView>
+        <Button
+            android:text="Previous"
+            android:layout_alignParentLeft="true"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            />
+
+        <Button
+            android:text="Next"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
 
 </RelativeLayout>

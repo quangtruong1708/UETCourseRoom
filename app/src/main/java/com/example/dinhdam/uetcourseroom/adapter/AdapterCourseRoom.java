@@ -1,6 +1,7 @@
 package com.example.dinhdam.uetcourseroom.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.dinhdam.uetcourseroom.R;
+import com.example.dinhdam.uetcourseroom.RegistrationCourseRoomActivity;
 import com.example.dinhdam.uetcourseroom.model.CourseRoom;
 
 import java.util.ArrayList;
@@ -43,12 +45,22 @@ public class AdapterCourseRoom extends RecyclerView.Adapter<AdapterCourseRoom.My
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
+    public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, final int i) {
         Log.d(TAG, "onBindViewHolder: called.");
 
         myViewHolder.mCourseRoomName.setText(listCourseRoom.get(i).getName());
         myViewHolder.mAuthorName.setText(listCourseRoom.get(i).getAuthorName());
         myViewHolder.mAvatarIcon.setImageResource(listCourseRoom.get(i).getAvatarID());
+
+        myViewHolder.parentLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(context, "Clicked "+listCourseRoom.get(i).getName(), Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(context, RegistrationCourseRoomActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationCourseRoomActivity"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/rcrImgIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/icons8_math_96" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcrTvTitle"
+        android:text="Toán trẻ em"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/rcrImgIcon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcrTvTag"
+        android:layout_below="@+id/rcrImgIcon"
+        android:text="Tags: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcrTvTagShow"
+        android:layout_below="@+id/rcrImgIcon"
+        android:text="Unknow"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/rcrTvTag"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcrTvDescribe"
+        android:layout_below="@+id/rcrTvTag"
+        android:text="Mô tả: "
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:id="@+id/rcrScrVieDescribeShow"
+        android:layout_below="@+id/rcrTvDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/nav_border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcrTvDescribeShow"
+            android:text="Mô tả ngắn"
+            android:textSize="20sp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/rcrBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:text="Hủy"/>
+        <Button
+            android:id="@+id/rcrBtnEnroll"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:text="Tham gia"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

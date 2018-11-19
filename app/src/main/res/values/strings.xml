@@ -3,4 +3,16 @@
     <string name="nav_explore">Khám phá</string>
     <string name="nav_my_room">Lớp của tôi</string>
     <string name="nav_account">Tài khoản</string>
+    <string name="forgot_pass">Quên mật khẩu?</string>
+    <string name="not_have_account">Chưa có tài khoản?</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="account">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="full_name">Họ tên</string>
+    <string name="repeat_password">Nhập lại mật khẩu</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="sign_up_by">Hoặc đăng ký bằng:</string>
+    <string name="sign_in_by">Hoặc đăng nhập bằng:</string>
 </resources>

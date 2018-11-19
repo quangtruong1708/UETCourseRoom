@@ -3,17 +3,17 @@ package com.example.dinhdam.uetcourseroom.model;
 public class Chapter {
     private int id;
     private String tittle;
-    private String body;
+    private String pdfUrl;
 
-    public Chapter(String tittle, String body) {
+    public Chapter(String tittle, String pdfUrl) {
         this.tittle = tittle;
-        this.body = body;
+        this.pdfUrl = pdfUrl;
     }
 
-    public Chapter(int id, String tittle, String body) {
+    public Chapter(int id, String tittle, String pdfUrl) {
         this.id = id;
         this.tittle = tittle;
-        this.body = body;
+        this.pdfUrl = pdfUrl;
     }
 
     public int getId() {
@@ -32,11 +32,11 @@ public class Chapter {
         this.tittle = tittle;
     }
 
-    public String getBody() {
-        return body;
+    public String getPdfUrl() {
+        return pdfUrl;
     }
 
-    public void setBody(String body) {
-        this.body = body;
+    public void setPdfUrl(String pdfUrl) {
+        this.pdfUrl = pdfUrl;
     }
 }
