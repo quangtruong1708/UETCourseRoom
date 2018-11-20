@@ -7,4 +7,7 @@
     <color name="color_nav_border">#050505</color>
     <color name="color_course_room_name">#ffffff</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTextMain">#000000</color>
+    <color name="colorTextSub">#2B2B2B</color>
+    <color name="colorTextOnImage">#FFFFFF</color>
 </resources>

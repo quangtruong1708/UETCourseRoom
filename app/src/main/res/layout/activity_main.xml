@@ -6,20 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/main_center"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/nav_bot">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerCourseRoom"
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tvAllCategoryMain"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Channel"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:id="@+id/recViewCategoryMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         </android.support.v7.widget.RecyclerView>
 
-    </RelativeLayout>
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/main_center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Math"/>-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:id="@+id/recyclerCourseRoom"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
@@ -28,7 +75,6 @@
         app:menu="@menu/nav_menu_item"
         android:layout_alignParentBottom="true"
         android:background="@drawable/nav_border">
-
     </android.support.design.widget.BottomNavigationView>
 
 </RelativeLayout>
