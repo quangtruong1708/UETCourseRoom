@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "619322888111",
+    "firebase_url": "https://projectthietkegiaodien.firebaseio.com",
+    "project_id": "projectthietkegiaodien",
+    "storage_bucket": "projectthietkegiaodien.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619322888111:android:312a5d0d837c4ace",
+        "android_client_info": {
+          "package_name": "com.example.dinhdam.uetcourseroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619322888111-nj3mfhuk9vqo5rp6tm23og7rd2ib06s9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6KWNaaO9JOscOZN80BCgnGX-w92cxdXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

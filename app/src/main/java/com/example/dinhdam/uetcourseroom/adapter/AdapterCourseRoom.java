@@ -11,16 +11,15 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.dinhdam.uetcourseroom.R;
-import com.example.dinhdam.uetcourseroom.RegistrationCourseRoomActivity;
+import com.example.dinhdam.uetcourseroom.activity.RegistrationCourseRoomActivity;
 import com.example.dinhdam.uetcourseroom.model.CourseRoom;
 
 import java.util.ArrayList;
 
 
-public class AdapterCourseRoom extends RecyclerView.Adapter<AdapterCourseRoom.MyViewHolder>{
+public class AdapterCourseRoom extends RecyclerView.Adapter<AdapterCourseRoom.MyViewHolder> {
 
     private static final String TAG = "AdapterCourseRoom";
 
@@ -65,15 +64,15 @@ public class AdapterCourseRoom extends RecyclerView.Adapter<AdapterCourseRoom.My
 
     @Override
     public int getItemCount() {
-        Log.d(TAG, "getItemCount: "+listCourseRoom.size());
+        Log.d(TAG, "getItemCount: " + listCourseRoom.size());
         return listCourseRoom.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
-         TextView mCourseRoomName;
-         TextView mAuthorName;
-         ImageView mAvatarIcon;
-         RelativeLayout parentLayout;
+        TextView mCourseRoomName;
+        TextView mAuthorName;
+        ImageView mAvatarIcon;
+        RelativeLayout parentLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

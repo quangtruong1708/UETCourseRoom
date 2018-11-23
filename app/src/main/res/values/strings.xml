@@ -7,10 +7,10 @@
     <string name="not_have_account">Chưa có tài khoản?</string>
     <string name="sign_in">Đăng nhập</string>
     <string name="sign_up">Đăng ký</string>
-    <string name="account">Tài khoản</string>
+    <string name="account">Tên đăng nhập</string>
     <string name="password">Mật khẩu</string>
     <string name="email">Email</string>
-    <string name="full_name">Họ tên</string>
+    <string name="full_name">Tên đăng nhập</string>
     <string name="repeat_password">Nhập lại mật khẩu</string>
     <string name="phone_number">Số điện thoại</string>
     <string name="sign_up_by">Hoặc đăng ký bằng:</string>

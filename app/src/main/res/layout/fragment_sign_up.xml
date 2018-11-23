@@ -1,106 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:orientation="vertical"
-    android:paddingEnd="20dp"
-    android:paddingStart="20dp"
+    android:layout_weight="8"
     android:background="#FFFFFF"
-    android:layout_weight="8">
-    <ScrollView
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_sign_up"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/btt_bottom_navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?android:attr/windowBackground"-->
+        <!--app:menu="@menu/bottom_navigation">-->
+
+        <!--</android.support.design.widget.BottomNavigationView>-->
+
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:drawableStart="@drawable/outline_account_circle_black_24"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="@string/full_name" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:drawableStart="@android:drawable/ic_menu_call"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="@string/phone_number" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:drawableStart="@android:drawable/sym_action_email"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="@string/email" />
-
-
-            <EditText
-                android:inputType="textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:drawableStart="@android:drawable/ic_lock_idle_lock"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="@string/password" />
-
-
-            <EditText
-                android:inputType="textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:drawableStart="@android:drawable/ic_lock_idle_lock"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="@string/repeat_password" />
+            android:layout_height="50dp"
+            android:background="?android:attr/windowBackground"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
             <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sign_up_by"/>
+                android:id="@+id/tv_dang_nhap"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Đăng nhập" />
 
-            <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/icons8_facebook_50"
-                    />
-
-                <ImageView
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/icons8_google_plus_48"
-                    />
-                <ImageView
-                    android:layout_marginLeft="20dp"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/icons8_twitter_48"
-                    />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/sisoBtnSignUp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/colorWhite"
-                android:background="@color/colorPrimaryDark"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/sign_up"/>
+            <TextView
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Đăng Ký" />
         </LinearLayout>
-    </ScrollView>
+
+
+        <EditText
+            android:id="@+id/edt_user_name_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/outline_account_circle_black_24"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="@string/full_name" />
+
+
+        <EditText
+            android:id="@+id/edt_pass_word_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/sisoBtnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
 
 
 </LinearLayout>

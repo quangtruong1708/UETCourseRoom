@@ -1,51 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInSignUpActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".activity.SignInSignUpActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:background="@color/colorPrimaryDark" />
 
     <LinearLayout
-        android:orientation="vertical"
-        android:paddingEnd="20dp"
-        android:paddingStart="20dp"
-        android:background="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="8">
+        android:layout_weight="5"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/signInSignUpTabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <android.support.design.widget.TabItem
-                android:id="@+id/signInItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sign_in"/>
 
-            <android.support.design.widget.TabItem
-                android:id="@+id/signUpItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sign_up"/>
-        </android.support.design.widget.TabLayout>
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/signInSignUpViewPager"
+        <FrameLayout
+            android:id="@+id/frm_pannel"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        </android.support.v4.view.ViewPager>
+
+        </FrameLayout>
 
     </LinearLayout>
 </LinearLayout>
